@@ -1,0 +1,19 @@
+Host olivia
+	HostName 10.0.8.10
+	User root
+
+Host eleven
+	HostName eleven.jmjordan.com
+	Port 8622
+	User root
+
+Host lab
+	HostName lab.jmjordan.com
+	Port 13222
+	User jonathan
+	IdentityFile ~/.ssh/id_ed25519
+
+Host hoarder
+	HostName 10.0.8.95
+	Port 22
+	User jonathan
