@@ -1,9 +1,9 @@
 # If you come from bash you might have to change your $PATH.
 export PATH="/usr/local/opt/python/libexec/bin:$PATH"
-export WORKON_HOME=~/.virtualenvs
+# export WORKON_HOME="$HOME/.virtualenvs"
 
 # Path to your oh-my-zsh installation.
-export ZSH="/Users/jonathan/.oh-my-zsh"
+export ZSH="$HOME/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -73,7 +73,7 @@ fi
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize pip python brew osx)
+plugins=(git colorize pip python brew osx virtualenv virtualenvwrapper)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -97,7 +97,7 @@ source $ZSH/oh-my-zsh.sh
 # ssh
 # export SSH_KEY_PATH="~/.ssh/rsa_id"
 
-source /usr/local/bin/virtualenvwrapper.sh
+# source /usr/local/bin/virtualenvwrapper.sh
 
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh

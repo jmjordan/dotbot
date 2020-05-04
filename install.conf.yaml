@@ -1,5 +1,6 @@
 - clean: ['~']
-
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]
 - link:
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
@@ -7,6 +8,7 @@
         create: true
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.oh-my-zsh: ohmyzsh
+    ~/.oh-my-zsh/custom/powerlevel10k: powerlevel10k
     ~/.zshrc: zshrc
-
-
+    ~/.p10k.zsh: p10k.zsh
