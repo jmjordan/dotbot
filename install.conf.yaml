@@ -1,6 +1,9 @@
 - clean: ['~']
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
+- create:
+  - ~/.zsh-custom/themes
+  - ~/.vim/pack/themes/opt
 - link:
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
@@ -8,8 +11,9 @@
         create: true
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
+    ~/.vim/pack/themes/opt/solarized8: vim-solarized8
     ~/.oh-my-zsh: ohmyzsh
-    ~/.oh-my-zsh/custom/themes/powerlevel10k:
+    ~/.zsh-custom/themes/powerlevel10k:
         path: powerlevel10k
         create: true
     ~/.p10k.zsh: p10k.zsh
