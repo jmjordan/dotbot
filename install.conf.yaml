@@ -9,6 +9,8 @@
     ~/.tmux.conf: tmux.conf
     ~/.vimrc: vimrc
     ~/.oh-my-zsh: ohmyzsh
-    ~/.oh-my-zsh/custom/powerlevel10k: powerlevel10k
-    ~/.zshrc: zshrc
+    ~/.oh-my-zsh/custom/themes/powerlevel10k:
+        path: powerlevel10k
+        create: true
     ~/.p10k.zsh: p10k.zsh
+    ~/.zshrc: zshrc
