@@ -99,6 +99,12 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias ta="tmux a"
+function wttr()
+{
+    local request="wttr.in/Charlotte Dr San Jose CA?1qF"
+    [ "$(tput cols)" -lt 125 ] && request+='n'
+    curl -H "Accept-Language: ${LANG%_*}" --compressed "$request"
+}
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
