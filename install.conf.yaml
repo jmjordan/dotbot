@@ -4,6 +4,7 @@
 - create:
   - ~/.zsh-custom/themes
   - ~/.vim/pack/themes/opt
+  - ~/.tmux/plugins
 - link:
     ~/.gitconfig: gitconfig
     ~/.ssh/config:
@@ -18,3 +19,4 @@
         create: true
     ~/.p10k.zsh: p10k.zsh
     ~/.zshrc: zshrc
+    ~/.tmux/plugins/tpm: tpm

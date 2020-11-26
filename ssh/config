@@ -2,18 +2,22 @@ Host olivia
 	HostName 10.0.8.10
 	User root
 
-Host eleven
-	HostName eleven.jmjordan.com
-	Port 8622
+Host docker
+	HostName 10.0.8.15
+	User jonathan
+
+Host meg
+	HostName 10.0.8.8
+	user jonathan
+
+Host padme
+	HostName 10.0.8.13
 	User root
 
-Host lab
-	HostName lab.jmjordan.com
-	Port 13222
-	User jonathan
-	IdentityFile ~/.ssh/id_ed25519
+Host jenkins
+	HostName 10.0.8.22
+	User admin
 
-Host hoarder
-	HostName 10.0.8.95
-	Port 22
+Host plex
+	HostName 10.0.8.16
 	User jonathan
