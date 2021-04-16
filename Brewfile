@@ -1,0 +1,20 @@
+# Brew
+brew 'openssl'
+brew 'readline'
+brew 'sqlite3'
+brew 'xz'
+brew 'zlib'
+brew 'htop'
+
+# Cask
+cask 'iterm2'
+cask 'syncthing'
+cask 'firefox'
+cask '1password'
+cask 'visual-studio-code'
+cask 'istat-menus'
+cask 'alfred'
+cask 'bartender'
+cask 'swiftbar'
+cask 'fantastical'
+cask 'signal'

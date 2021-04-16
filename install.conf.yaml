@@ -6,17 +6,20 @@
   - ~/.vim/pack/themes/opt
   - ~/.tmux/plugins
 - link:
-    ~/.gitconfig: gitconfig
-    ~/.ssh/config:
-        path: ssh/config
-        create: true
-    ~/.tmux.conf: tmux.conf
-    ~/.vimrc: vimrc
-    ~/.vim/pack/themes/opt/solarized8: vim-solarized8
-    ~/.oh-my-zsh: ohmyzsh
-    ~/.zsh-custom/themes/powerlevel10k:
-        path: powerlevel10k
-        create: true
-    ~/.p10k.zsh: p10k.zsh
-    ~/.zshrc: zshrc
-    ~/.tmux/plugins/tpm: tpm
+  ~/.gitconfig: gitconfig
+  ~/.ssh/config:
+      path: ssh/config
+      create: true
+  ~/.tmux.conf: tmux.conf
+  ~/.vimrc: vimrc
+  ~/.vim/pack/themes/opt/solarized8: vim-solarized8
+  ~/.oh-my-zsh: ohmyzsh
+  ~/.zsh-custom/themes/powerlevel10k:
+      path: powerlevel10k
+      create: true
+  ~/.p10k.zsh: p10k.zsh
+  ~/.zshrc: zshrc
+  ~/.tmux/plugins/tpm: tpm
+  ~/.pyenv: pyenv
+- brewfile: 
+  - Brewfile

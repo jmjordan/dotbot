@@ -13,3 +13,9 @@
 [submodule "tpm"]
 	path = tpm
 	url = https://github.com/tmux-plugins/tpm
+[submodule "pyenv"]
+	path = pyenv
+	url = https://github.com/pyenv/pyenv.git
+[submodule "dotbot-brew"]
+	path = dotbot-brew
+	url = https://github.com/d12frosted/dotbot-brew.git
