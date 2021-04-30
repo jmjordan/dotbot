@@ -1,3 +1,7 @@
+if [[ -n $SSH_CONNECTION ]]; then
+  typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
+fi
+
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -114,7 +118,11 @@ function wttr()
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 # Homebrew
-eval "$(/opt/homebrew/bin/brew shellenv)"
+if [[ "$(uname -m)" == "arm64" ]]; then
+  eval "$(/opt/homebrew/bin/brew shellenv)"
+else
+  eval "$(/usr/local/bin/brew shellenv)"
+fi
 
 # pyenv
 export PYENV_ROOT="$HOME/.pyenv"
