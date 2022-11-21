@@ -3,3 +3,5 @@
 # Please adapt and uncomment the following lines:
 	name = Jonathan Jordan
 	email = jonathan@jmjordan.com
+[init]
+	defaultBranch = main

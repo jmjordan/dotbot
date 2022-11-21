@@ -1,7 +1,3 @@
-if [[ -n $SSH_CONNECTION ]]; then
-  typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
-fi
-
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -72,7 +68,7 @@ ZSH_CUSTOM="$HOME/.zsh-custom"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize pip python osx)
+plugins=(git colorize macos)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -125,8 +121,6 @@ else
 fi
 
 # pyenv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
 if command -v pyenv 1>/dev/null 2>&1; then
   eval "$(pyenv init -)"
 fi

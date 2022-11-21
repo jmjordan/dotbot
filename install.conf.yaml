@@ -1,3 +1,7 @@
+- defaults:
+    link:
+      create: true
+      relink: true
 - clean: ['~']
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
@@ -6,20 +10,22 @@
   - ~/.vim/pack/themes/opt
   - ~/.tmux/plugins
 - link:
-  ~/.gitconfig: gitconfig
-  ~/.ssh/config:
+    ~/.gitconfig: gitconfig
+    ~/.ssh/config:
       path: ssh/config
       create: true
-  ~/.tmux.conf: tmux.conf
-  ~/.vimrc: vimrc
-  ~/.vim/pack/themes/opt/solarized8: vim-solarized8
-  ~/.oh-my-zsh: ohmyzsh
-  ~/.zsh-custom/themes/powerlevel10k:
+    ~/.tmux.conf: tmux.conf
+    ~/.vimrc: vimrc
+    ~/.vim/pack/themes/opt/solarized8: vim-solarized8
+    ~/.oh-my-zsh: ohmyzsh
+    ~/.zsh-custom/themes/powerlevel10k:
       path: powerlevel10k
       create: true
-  ~/.p10k.zsh: p10k.zsh
-  ~/.zshrc: zshrc
-  ~/.tmux/plugins/tpm: tpm
-  ~/.pyenv: pyenv
+    ~/.p10k.zsh: p10k.zsh
+    ~/.zshrc: zshrc
+    ~/.zprofile: zprofile
+    ~/.tmux/plugins/tpm: tpm
+    ~/.pyenv: pyenv
+    ~/.pyenv/plugins/pyenv-virtualenv: pyenv-virtualenv
 - brewfile: 
   - Brewfile
