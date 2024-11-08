@@ -1,23 +1,40 @@
+Host media.sjc.jmjordan.io
+	HostName media.sjc.jmjordan.io
+
+Host uptime.sjc.jmjordan.io
+	HostName uptime.sjc.jmjordan.io
+
+Host proxy.sjc.jmjordan.io
+	HostName proxy.sjc.jmjordan.io
+
+Host 10.0.13.19
+	HostName 10.0.13.19
+	User kube
+
+Host 10.0.13.156
+	HostName 10.0.13.156
+	User joanna
+
+Host alice
+	HostName 10.0.13.25
+	User joanna
+
 Host olivia
-	HostName 10.0.8.10
+	HostName 10.0.13.11
 	User root
 
-Host docker
-	HostName 10.0.8.15
-	User jonathan
-
 Host meg
-	HostName 10.0.8.8
-	user jonathan
+	HostName 10.0.13.8
+	User root
 
 Host padme
 	HostName 10.0.8.13
 	User root
 
-Host jenkins
-	HostName 10.0.8.22
-	User admin
-
 Host plex
-	HostName 10.0.8.16
-	User jonathan
+	HostName 10.0.13.16
+	User root
+
+Host *
+	IdentityAgent "~/Library/Group Containers/2BUA8C4S2C.com.1password/t/agent.sock"
+

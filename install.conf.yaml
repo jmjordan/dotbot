@@ -27,5 +27,6 @@
     ~/.tmux/plugins/tpm: tpm
     ~/.pyenv: pyenv
     ~/.pyenv/plugins/pyenv-virtualenv: pyenv-virtualenv
+    ~/.mackup.cfg: mackup.cfg
 - brewfile: 
   - Brewfile
